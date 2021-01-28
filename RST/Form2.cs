@@ -30,5 +30,13 @@ namespace RST
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\jonat\Downloads\backgroundmmm2.wav");
             player.Play();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form4 = new Form4();
+            form4.Show();
+            form4.Closed += (s, args) => this.Close();
+        }
     }
 }
