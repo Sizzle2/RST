@@ -27,6 +27,9 @@ namespace RST
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            Global.btn1 = false;
+            Global.btn2 = false;
+
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\jonat\Downloads\backgroundmmm2.wav");
             player.Play();
         }
@@ -37,6 +40,14 @@ namespace RST
             var form4 = new Form4();
             form4.Show();
             form4.Closed += (s, args) => this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form5 = new Form5();
+            form5.Show();
+            form5.Closed += (s, args) => this.Close();
         }
     }
 }

@@ -172,6 +172,16 @@ namespace RST.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Keyboard_White_Space {
+            get {
+                object obj = ResourceManager.GetObject("Keyboard_White_Space", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maybeshield {
             get {
                 object obj = ResourceManager.GetObject("maybeshield", resourceCulture);

@@ -34,6 +34,9 @@ namespace RST
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Global.btn1 = true;
+            Global.btn2 = true;
+
             pbshield.Visible = false;
             pbshield.Enabled = false;
 

@@ -25,6 +25,9 @@ namespace RST
 
         private void Form3_Load(object sender, EventArgs e)
         {
+
+            label2.Text = Global.score.ToString();
+            
             timer1.Start();
 
 

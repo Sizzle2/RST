@@ -11,5 +11,9 @@ namespace RST
 
         public static int score;
 
+
+        public static bool btn1 = false;
+        public static bool btn2 = false;
+
     }
 }

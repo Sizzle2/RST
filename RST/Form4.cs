@@ -33,6 +33,13 @@ namespace RST
         private void Form4_Load(object sender, EventArgs e)
         {
 
+            if (Global.btn1 == false)
+            {
+                button2.Enabled = false;
+                button3.Enabled = false;
+            }
+  
+
             try
             {
                 line1 = File.ReadLines("results.txt").Skip(2).Take(1).First();
@@ -179,13 +186,37 @@ namespace RST
                     label5.Text = name2;
                     label8.Text = line12.ToString();
 
-                    label6.Text = name3;
+                    label6.Text = name1;
                     label9.Text = line11.ToString();
                 }
 
             }
 
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form1 = new Form1();
+            form1.Show();
+            form1.Closed += (s, args) => this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new Form2();
+            form2.Show();
+            form2.Closed += (s, args) => this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form3 = new Form3();
+            form3.Show();
+            form3.Closed += (s, args) => this.Close();
         }
     }
 }
